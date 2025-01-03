@@ -1,0 +1,23 @@
+U = unstaged (when a file is in folder but not added to the repo)
+M = modified (when a file is edited but not updated on the repo)
+A = Index Added (when new file is added to repo)
+
+-- or create a new repository on the command line --
+
+git init
+git add . (to add all the data from folder to the repo)
+git commit -m "first commit" (it means you're saving the file)
+git branch -M main (it's the folder where everyone's code can be seen) (can be changed)
+git remote add origin (https://github.com/arnav2404/IQ-INDIA-HTML-CSS-SHAREPOINT.git) (EX-repo link)
+git push -u origin main (to push the code from vs code to git repo)
+
+-- how to update the modified code on repo --
+
+git add <file name> (the file which was modified weather added or deleted)
+git add . (again to add all the data from folder to the repo)
+git commit -m "file deleted" (if deleted type "file deleted" otherwise "first commit")
+git push -u origin main (push to repo)
+
+-- creat a different repo for JavaScript --
+
+-- how to rename the file --

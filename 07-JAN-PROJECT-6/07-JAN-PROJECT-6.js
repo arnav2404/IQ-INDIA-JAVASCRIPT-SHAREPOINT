@@ -43,6 +43,8 @@ document.write(`<h2>MODULUS OF ${n9} % ${n10} = ${res4}</h2>`)
 let m6=45
 document.write(`<h2>SQUARE ROOT OF ${m6} = ${m6**2}</h2>`)
 
+// Comparision Operator
+
 document.write(`<hr><h2 style="color:red;">2.Comparision Operator</h2><hr>`)
 
 let x=50;
@@ -100,3 +102,41 @@ let v7=45;
 let v8=46;
 let v9=v7<v8 || ! v7>v8
 document.write(`<h2>${v7} not ${v8} = ${v9}</h2>`)
+
+//08-JAN
+
+// ternary Operator (?)
+document.write(`<hr><h2 style="color:red;">5.Ternary Operator (?)</h2><hr>`)
+let marks=55;
+let result=(marks>45) ? 'Pass':'Fail';
+document.write(`<h2>Result: ${result}</h2>`)
+
+// Unary Operator
+document.write(`<hr><h2 style="color:red;">6.Unary Operator</h2><hr>`)
+let v=55;
+let t=+v
+document.write(`<h2>Result: ${t}</h2>`)
+
+
+// question asked by batchmate
+
+let r=34
+let s='34'
+let r1=r===s
+document.write(`<h2>Result: ${r1}</h2>`)
+
+// Assignment Operator
+document.write(`<hr><h2 style="color:red;">7.Assignment Operator</h2><hr>`)
+let j=90;
+j=j+10 // standard method
+j=j+20
+j+=23 // shorthand method
+j*=20
+j/=3
+document.write(`<h2>Result: ${j}</h2>`)
+
+
+
+
+
+

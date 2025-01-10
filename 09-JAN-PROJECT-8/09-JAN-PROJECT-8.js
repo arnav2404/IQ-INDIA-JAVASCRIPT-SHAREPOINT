@@ -22,10 +22,10 @@
 //     document.write(`${num1} is Odd`)
 // }
 
-// let m=75
-// if(m>30){
+// let k=75
+// if(k>30){
 //     document.write(`Hello`)
-//     if(m<70){
+//     if(k<70){
 //         document.write(`By`)
 //     }
 //     else{
@@ -50,6 +50,24 @@
 // else if(v<n<m){
 //     console.log(`${n}`)
 // }
-// else{
-//     console.log(`${m}`)
+// else{ 
 // }
+
+function findMiddle(a, b, c) {
+    let middle;
+
+    if ((a > b && a < c) || (a < b && a > c)) {
+        middle = a;
+    } else if ((b > a && b < c) || (b < a && b > c)) {
+        middle = b;
+    } else {
+        middle = c;
+    }
+
+    return middle;
+}
+let num1 = 1000;
+let num2 = 20;
+let num3 = 150;
+
+console.log("The middle number is:", findMiddle(num1, num2, num3));

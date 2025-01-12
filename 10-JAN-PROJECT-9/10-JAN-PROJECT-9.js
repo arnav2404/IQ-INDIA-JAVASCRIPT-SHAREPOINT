@@ -32,41 +32,51 @@
 // // hello() //calling
 
 
-document.write(`<center><h1 style="color:red; background-color:darkgrey;">Checking the functions</hr><hr></center>`)
-//addition
-function add(){
-    let a=45
-    let b=36
-    let res=a+b
-    document.write(`<h1>Result: ${a} + ${b} = ${res}</h1><hr>`)
-}
-add()
+// document.write(`<center><h1 style="color:red; background-color:darkgrey;">Checking the functions</hr><hr></center>`)
+// //addition
+// function add(){
+//     let a=45
+//     let b=36
+//     let res=a+b
+//     document.write(`<h1>Result: ${a} + ${b} = ${res}</h1><hr>`)
+// }
+// add()
 
-//substraction
-function subs(){
-    let a1=45
-    let b1=36
-    let res1=a1-b1
-    document.write(`<h1>Result: ${a1} - ${b1} = ${res1}</h1><hr>`)
-}
-subs()
+// //substraction
+// function subs(){
+//     let a1=45
+//     let b1=36
+//     let res1=a1-b1
+//     document.write(`<h1>Result: ${a1} - ${b1} = ${res1}</h1><hr>`)
+// }
+// subs()
 
-//division
-function div(){
-    let a2=65
-    let b2=25
-    let res2=a2/b2
-    document.write(`<h1>Result: ${a2} / ${b2} = ${res2}</h1><hr>`)
-}
-div()
+// //division
+// function div(){
+//     let a2=65
+//     let b2=25
+//     let res2=a2/b2
+//     document.write(`<h1>Result: ${a2} / ${b2} = ${res2}</h1><hr>`)
+// }
+// div()
 
-//multiplication
-function mul(){
-    let n=6516
-    let m=984630
-    let v=n*m
-    document.write(`<h1>Result: ${n} * ${m} = ${v}</h1><hr>`)
+// //multiplication
+// function mul(){
+//     let n=6516
+//     let m=984630
+//     let v=n*m
+//     document.write(`<h1>Result: ${n} * ${m} = ${v}</h1><hr>`)
+// }
+// mul()
+
+
+// Write a function to calculate the square of a number.
+function Sqr(){
+    let a=25
+    let res=a*a
+    document.write(`<h1>Result: ${res}</h1>`)
 }
-mul()
+Sqr()
+
 
 

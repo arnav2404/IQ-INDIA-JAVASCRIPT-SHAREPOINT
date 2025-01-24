@@ -228,5 +228,7 @@
 //         }
 //         document.write(`<h1>Number of Correct Answers : ${numberofcorrectanswers}</h1>`)
 //         document.write(`<h1>Number of Wrong Questions : ${numberofwronganswer}</h1>`)
-//         document.write(`<h1>Number of Skipped Questions ${numberofskippedquestions}:</h1>`)
+//         document.write(`<h1>Number of Skipped Questions : ${numberofskippedquestions}</h1>`)
+//     }else{
+//         document.write(`<h1>Okay! Have a Nice Day.</h1>`)
 //     }

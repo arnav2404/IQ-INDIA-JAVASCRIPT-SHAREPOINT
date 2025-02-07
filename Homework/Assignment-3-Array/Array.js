@@ -47,21 +47,21 @@
 // categorizeGroceryItems()
 
 // ---------------------------------Q4-------------------------------------
-// function findExtremeTempertures(){
-//     let city_count=parseInt(prompt("Enter the Number of Cities:"), 10)
-//     let temperatures_data=[]
-//     for (let i=0; i<city_count; i++){
-//         let city_name=prompt(`Enter name of City ${i+1}:`)
-//         let city_temp=parseFloat(prompt(`Enter temperature of ${city_name}:`))
-//         temperatures_data.push({name: city_name, temperature: city_temp})
-//     }
-//     let highestTempCity=temperatures_data.reduce((max, city)=> city.temperature > max.temperature ? city: max, temperatures_data[0])
-//     let lowestTempCity=temperatures_data.reduce((min, city)=> city.temperature < min.temperature ? city: min, temperatures_data[0])
+function findExtremeTempertures(){
+    let city_count=parseInt(prompt("Enter the Number of Cities:"), 10)
+    let temperatures_data=[]
+    for (let i=0; i<city_count; i++){
+        let city_name=prompt(`Enter name of City ${i+1}:`)
+        let city_temp=parseFloat(prompt(`Enter temperature of ${city_name}:`))
+        temperatures_data.push({name: city_name, temperature: city_temp})
+    }
+    let highestTempCity=temperatures_data.reduce((max, city)=> city.temperature > max.temperature ? city: max, temperatures_data[0])
+    let lowestTempCity=temperatures_data.reduce((min, city)=> city.temperature < min.temperature ? city: min, temperatures_data[0])
 
-//     document.write(`<p style="text-align:center; font-size:1.5em; width:60%; margin:auto">The state with the highest Temperature is <b style="color:Green; font-size:1.7em; background-color:beige; border-radius:5px;">${highestTempCity.name}</b>, with a Temperature of <b style="color:Red; font-size:1.7em; background-color:beige; border-radius:5px;">${highestTempCity.temperature}</b>°C</p>`)
-//     document.write(`<br><p style="text-align:center; font-size:1.5em; width:60%; margin:auto">The state with the lowest Temperature is <b style="color:Green; font-size:1.7em; background-color:beige; border-radius:5px;">${lowestTempCity.name}</b>, with a Temperauture of <b style="color:Red; font-size:1.7em; background-color:beige; border-radius:5px;">${lowestTempCity.temperature}</b>°C</p>`)
-// }
-// findExtremeTempertures()
+    document.write(`<p style="text-align:center; font-size:1.5em; width:60%; margin:auto">The state with the highest Temperature is <b style="color:Green; font-size:1.7em; background-color:beige; border-radius:5px;">${highestTempCity.name}</b>, with a Temperature of <b style="color:Red; font-size:1.7em; background-color:beige; border-radius:5px;">${highestTempCity.temperature}</b>°C</p>`)
+    document.write(`<br><p style="text-align:center; font-size:1.5em; width:60%; margin:auto">The state with the lowest Temperature is <b style="color:Green; font-size:1.7em; background-color:beige; border-radius:5px;">${lowestTempCity.name}</b>, with a Temperauture of <b style="color:Red; font-size:1.7em; background-color:beige; border-radius:5px;">${lowestTempCity.temperature}</b>°C</p>`)
+}
+findExtremeTempertures()
 
 // ---------------------------------Q5-------------------------------------
 // function filterCustomerByLetter(customers, letter){

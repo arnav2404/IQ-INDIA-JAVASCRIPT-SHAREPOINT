@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Table-DOM.css">
+    <title>Table using DOM</title>
+</head>
+<body>
+    <script>
+        // create div
+        let div=document.createElement('div')
+        div.className='info'
+        document.body.append(div)
+        console.log(div)
+        // create table
+        let table=document.createElement('table')
+        div.append(table)
+        // create table-head
+        let tr1=document.createElement('tr')
+        table.append(tr1)
+        let th1=document.createElement('th')
+        th1.innerHTML='Name'
+        tr1.append(th1)
+        let th2=document.createElement('th')
+        th2.innerHTML='Roll No.'
+        tr1.append(th2)
+        let th3=document.createElement('th')
+        th3.innerHTML='Address'
+        tr1.append(th3)
+        let th4=document.createElement('th')
+        th4.innerHTML='Phone No.'
+        tr1.append(th4)
+        let th5=document.createElement('th')
+        th5.innerHTML='Email'
+        tr1.append(th5)
+        // create table-description column-1
+        let tr2=document.createElement('tr')
+        table.append(tr2)
+        let td1=document.createElement('td')
+        td1.innerHTML='Arnav Dixit'
+        tr2.append(td1)
+        let td2=document.createElement('td')
+        td2.innerHTML='0905CS201036'
+        tr2.append(td2)
+        let td3=document.createElement('td')
+        td3.innerHTML='New Kondli, Delhi'
+        tr2.append(td3)
+        let td4=document.createElement('td')
+        td4.innerHTML='8946516165'
+        tr2.append(td4)
+        let td5=document.createElement('td')
+        td5.innerHTML='dixitarnav202215@gmail.com'
+        tr2.append(td5)
+        // create table-description column-2
+        let tr3=document.createElement('tr')
+        table.append(tr3)
+        let td6=document.createElement('td')
+        td6.innerHTML='Jai Vardhan'
+        tr3.append(td6)
+        let td7=document.createElement('td')
+        td7.innerHTML='0905CS201056'
+        tr3.append(td7)
+        let td8=document.createElement('td')
+        td8.innerHTML='New Kondli, Delhi'
+        tr3.append(td8)
+        let td9=document.createElement('td')
+        td9.innerHTML='98626598651'
+        tr3.append(td9)
+        let td10=document.createElement('td')
+        td10.innerHTML='jaivardhan202215@gmail.com'
+        tr3.append(td10)
+    </script>
+</body>
+</html>

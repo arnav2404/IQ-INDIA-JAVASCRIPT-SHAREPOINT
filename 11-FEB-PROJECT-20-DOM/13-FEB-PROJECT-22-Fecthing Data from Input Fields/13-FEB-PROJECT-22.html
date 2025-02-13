@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="13-FEB-PROJECT-22.css">
+    <title>Fecthing Data from Input fields</title>
+</head>
+<body>
+    <!-- Fecthing Data from Input fields -->
+
+    <div class="main">
+        <div class="stu_name">
+            <label for="">Student Name</label>
+        <input id="stu_name" type="text" placeholder="Student Name">
+        </div>
+        <div class="stu_age">
+            <label for="">Student Age</label>
+        <input id="stu_age"  type="number" placeholder="Student Age">
+        </div>
+        <button onclick="get_data()">Fetch Data</button>
+    </div>
+    <div>
+        <h3 id="set"></h3>
+        
+    </div>
+
+    <script>
+        function get_data(){
+            let set=document.getElementById('set')
+            let stu_name=document.getElementById('stu_name').value
+            let stu_age=document.getElementById('stu_age').value
+            // document.write(`${stu_name} ${stu_age}`)
+            set.innerHTML=(`Name: ${stu_name} <br> Age: ${stu_age}`)
+            // alert(`${stu_name} ${stu_age}`)
+        }
+    </script>
+</body>
+</html>

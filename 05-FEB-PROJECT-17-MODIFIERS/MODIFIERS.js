@@ -16,7 +16,7 @@
 // let res=string.search(pattern)
 // console.log(res)
 
-// 1. Metacharacter
+//-------------------------------------------- A. Metacharacter ------------------------------------------------
 
 // ------------------------1'.' :match any character with dots('.')----------------------
 
@@ -95,3 +95,88 @@
 // 11. ($) : Matches the ending of string
 // let reg=/ae$/
 // console.log(reg.test("yor broae"))
+
+// 12. (|) : Alternate (or)
+// let reg=/good|bad/
+// console.log(reg.test('I am verbady'))
+// console.log(reg.test('I am good but pata nhi'))
+
+// 13. (|) : Grouping
+// let reg=/(good|bad)s?/
+// console.log(reg.test('I am very bad'))
+// console.log(reg.test('I am good but pata nhi'))
+
+// 14. (+) : Matches one or more of the preceding character
+// let reg=/to+/
+// console.log(reg.test('to'))
+// console.log(reg.test('tooo'))
+// console.log(reg.test('toooo'))
+
+// 15. (\) : Escape special character (for any symbol)
+// let reg=/\./
+// console.log(reg.test('a.b'))
+// console.log(reg.test('abc'))
+
+// let reg=/\@/
+// console.log(reg.test('a@b'))
+// console.log(reg.test('a.b'))
+// console.log(reg.test('abc'))
+
+//---------------------------------------------- B. Brackets -----------------------------------
+
+// 1. Match any character inside any bracket
+// let reg=/[abc]/
+// console.log(reg.test('this is kite')) //there is no character inside as same as the reg
+
+// let reg=/[abci]/
+// console.log(reg.test('this is kite')) // i is present inside this log
+
+// let reg=/[abci]/g
+// console.log(reg.test('this is kite'))
+// console.log('this is a kite bad'.match(reg))
+
+// let reg=/[aeiou]/g
+// console.log(reg.test('this is kite'))
+// console.log('aman, abhay, rohan, ankit'.match(reg))
+
+// 2. Match any from a-z.
+// let reg=/[A-Z]/ig
+// console.log(reg.test('this is kite')) 
+// console.log('aman, abhay, rohan, ankit'.match(reg))
+
+// 3. Match any from 0-9.
+// let reg=/[A-Za-z0-9@]/g
+// console.log(reg.test('this is kite')) 
+// console.log('aman, abhay, rohan,5465 ankit, @, &^$%&^*'.match(reg))
+
+// 4. Match not any char.(type those character that you don't want to find)
+// let reg=/[^aeiou]/g
+// console.log(reg.test('this is kite')) 
+// console.log('aman, abhay, rohan,5465 ankit, @, &^$%&^*'.match(reg).length)
+
+// 5. Match 1 time at end.
+// let reg=/hey$/g
+// console.log(reg.test('he'))
+// console.log(reg.test('hey'))
+// console.log(reg.test('heyy'))
+
+// 6. Match n time at end.
+// let reg=/hey{0}/g
+// console.log(reg.test('he bad good'))
+
+// let reg=/hey{5}/g
+// console.log(reg.test('heyyyy bad good'))
+
+// let reg=/hey{2}/g
+// console.log(reg.test('heyyyy bad good'))
+
+// create a pattern for validate username (min=3, max=15) words+
+// 1. alpha metric (Only alphabate) minimum one character in CAPITALS
+// 2. NO Symbols and Numbers allowed
+
+// let reg=/^[A-Za-z_]/
+// console.log(reg.test('Arnav_Dixit'))
+
+let date='2025-04-24'
+let reg=/^\d{4}-\d{2}-\d{2}$/
+console.log(reg.test(date))

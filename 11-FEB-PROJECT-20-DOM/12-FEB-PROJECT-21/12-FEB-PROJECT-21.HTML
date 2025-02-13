@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        padding: 0;
+        margin: 0;
+    }
+    nav{
+        display: flex;
+        justify-content: space-around;
+        background: linear-gradient(55deg, rgb(255, 247, 0), rgb(255, 0, 0));
+        color: white;
+        font-size: 1.2em;
+    }
+    nav .menu ul li{
+        list-style: none;
+        float: left;
+        margin-left: 50px;
+    }
+</style>
+<body>
+    <!-- <script>
+        // create element using Js
+        let h1=document.createElement('h1')
+        h1.innerHTML="This is an Element Created by JS"
+        document.body.append(h1)
+        console.log(h1)
+    </script> -->
+    <!-- <script>
+        // create div element using Js
+        let first_div=document.createElement('div')
+        let h1=document.createElement('h1')
+        first_div.className=""
+        h1.innerHTML="This is new content"
+        first_div.body.append(h1)
+        console.log(h1)
+    </script> -->
+    <script>
+        // Create Nav
+        let nav=document.createElement('nav')
+        document.body.append(nav)
+        console.log(nav)
+        // Create first div
+        let first_div=document.createElement('div')
+        first_div.className='logo'
+        nav.append(first_div)
+
+        let h1=document.createElement('h1')
+        h1.innerHTML=`Success <span>24</span>`
+        first_div.append(h1)
+        // create second_div
+        let second_div=document.createElement('div')
+        second_div.className='menu'
+        nav.append(second_div)
+
+        let ul=document.createElement('ul')
+        let li_1=document.createElement('li')
+        let li_2=document.createElement('li')
+        let li_3=document.createElement('li')
+        let li_4=document.createElement('li')
+        let li_5=document.createElement('li')
+        li_1.innerHTML=`<a>Home</a>`
+        li_2.innerHTML=`<a>About</a>`
+        li_3.innerHTML=`<a>Contact</a>`
+        li_4.innerHTML=`<a>Services</a>`
+        li_5.innerHTML=`<a>Courses</a>`
+        ul.append(li_1,li_2,li_3,li_4,li_5)
+        second_div.append(ul)
+
+    </script>
+</body>
+</html>

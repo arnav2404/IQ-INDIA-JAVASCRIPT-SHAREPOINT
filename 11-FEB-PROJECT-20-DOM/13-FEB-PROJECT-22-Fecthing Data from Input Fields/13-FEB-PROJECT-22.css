@@ -1,0 +1,21 @@
+h3{
+    width: 8%;
+    margin: auto;
+    font-size: 1.3em;
+    animation: rotateanimation 5s linear forwards;
+    border: 2px solid red;
+    /* text-align: center; */
+}
+h3:hover{
+    box-shadow: 0px 0px 10px 2px;
+    transition: 0.3s all;
+}
+
+@keyframes rotateanimation{
+    form{
+        transform: rotate(0deg)
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

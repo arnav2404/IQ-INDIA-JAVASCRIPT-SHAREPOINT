@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#box{
+    width: 80%;
+    height: 500px;
+    margin: auto;
+    margin-top: 20px;
+    background-color:white;
+    border: 1px solid red;
+    box-shadow: 1px 1px 2px 2px ;
+  
+}
+.rotation{
+    animation:change_color;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+#btn{
+    margin-top: 50px;
+    padding:1%;
+    display: flex;
+    justify-self: center;
+    background: linear-gradient(55deg, orange, red);
+}
+@keyframes change_color {
+    0%
+    {
+        background-color:rgb(red, green, blue);
+    }
+     50% 
+    {
+        background-color:yellow;
+    }
+    100%{
+        background-color:peru;
+    }
+    
+}

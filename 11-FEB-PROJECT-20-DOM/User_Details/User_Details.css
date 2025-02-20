@@ -1,0 +1,66 @@
+body{
+    padding: 0.2%;
+    margin: 0;
+}
+section{
+    display: none;
+}
+input{
+    width: 29.3%;
+    margin-left: 0.5%;
+    padding: 1.5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.2em;
+    margin-bottom: 3%;
+    border: none;
+}
+table th{
+    background: linear-gradient(180deg, limegreen, white);
+}
+table td{
+    color: rgb(40, 167, 40);
+    font-size: 1.3em;
+}
+#btn1{
+    display: flex;
+    justify-self: center;
+    padding:1% 2%;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px 1px;
+    background: linear-gradient(200deg, limegreen, white);
+}
+#btn1:hover{
+    box-shadow: 0px 0px 10px 5px;
+    transition: 0.5s all;
+}
+#initiate-btn{
+    display: flex;
+    justify-self: center;
+    padding:1% 2%;
+    border: none;
+    margin-top: 5%;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px 1px;
+    background: linear-gradient(200deg, limegreen, white);
+    animation: slidedown 0.5s linear;
+}
+#initiate-btn:hover{
+    box-shadow: 0px 0px 10px 5px;
+    transition: 0.5s all;
+}
+@keyframes slidedown{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

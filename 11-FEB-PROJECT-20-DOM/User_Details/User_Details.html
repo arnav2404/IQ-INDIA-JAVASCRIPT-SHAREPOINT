@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="User_Details.css">
+    <title>User Input Details</title>
+</head>
+<body>
+    <button onclick="start_system()" id="initiate-btn">INITIATE</button>
+    <section id="intiate">
+        <div class="inputs">
+                <input type="text" id="user_name" placeholder="Enter Name">
+                <input type="number" id="user_mob" placeholder="Enter Mobile">
+                <input type="number" id="user_age" placeholder="Enter Age">
+        </div>
+        <hr>
+        <table border="1" id="table" cellpadding="20">
+            <tr>
+                <th>Name</th>
+                <th>Mobile</th>
+                <th>Age</th>
+            </tr>
+        </table>
+        <button id="btn1" onclick="add_table_column()">ADD DATA</button>
+    </section>
+<script src="User_Details.js"></script>
+</body>
+</html>

@@ -12,18 +12,17 @@
     <div class="main">
         <div class="stu_name">
             <label for="">Student Name</label>
-        <input id="stu_name" type="text" placeholder="Student Name">
+            <input id="stu_name" type="text" placeholder="Student Name">
         </div>
         <div class="stu_age">
             <label for="">Student Age</label>
-        <input id="stu_age"  type="number" placeholder="Student Age">
+            <input id="stu_age"  type="number" placeholder="Student Age">
         </div>
         <button onclick="get_data()">Fetch Data</button>
     </div>
-    <div>
+    <!-- <div>
         <h3 id="set"></h3>
-        
-    </div>
+    </div> -->
 
     <script>
         function get_data(){
@@ -31,9 +30,32 @@
             let stu_name=document.getElementById('stu_name').value
             let stu_age=document.getElementById('stu_age').value
             // document.write(`${stu_name} ${stu_age}`)
-            set.innerHTML=(`Name: ${stu_name} <br> Age: ${stu_age}`)
+            // set.innerHTML=(`Name: ${stu_name} <br> Age: ${stu_age}`)
             // alert(`${stu_name} ${stu_age}`)
         }
+
+        // function get_data() {
+        // let set = document.getElementById('set');
+        // let h1=document.createElement('h1')
+        // let stu_name = document.getElementById('stu_name').value;
+        // let stu_age = document.getElementById('stu_age').value;
+        // h1.innerHTML=(`Name: ${stu_name} <br> Age: ${stu_age} <br><br>`)
+        // document.body.append(h1)
+
+
+
+        // if (stu_name.trim() === "" || stu_age.trim() === "") {
+        //     alert("Please enter both name and age!");
+        //     return;
+        // }
+
+        // // Append the new data to the existing content
+        // set.innerHTML += `Name: ${stu_name} <br> Age: ${stu_age} <br><br>`;
+
+        // // Clear input fields after submission
+        // document.getElementById('stu_name').value = "";
+        // document.getElementById('stu_age').value = "";
+    // }
     </script>
 </body>
 </html>

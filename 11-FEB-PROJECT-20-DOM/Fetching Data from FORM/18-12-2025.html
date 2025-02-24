@@ -38,10 +38,15 @@
     </fieldset>
 
     <script>
-        function fetch_body(){
-            let std_name=document.getElementById('std-name').value
-            
-        }
+        document.getElementById('my-form').addEventListener('submit',function(event){
+            event.preventDefault()
+            let st_name=document.getElementById('st-name').value;
+            let st_pass=document.getElementById('st-pass').value;
+            console.log(st_name)
+            console.log(st_pass)
+            console.log(event)
+            document.getElementById('my-form').reset()
+        })
     </script>
 
 </html>

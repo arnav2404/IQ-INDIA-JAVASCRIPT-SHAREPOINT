@@ -1,0 +1,45 @@
+body{
+    background: linear-gradient(55deg,red,orange);
+    height: 97.7vh;
+}
+#col{
+    position: relative;
+    display: flex;
+    gap: 10%;
+    justify-self: center;
+    width: 30%;
+}
+#num{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: red;
+    font-weight: bold;
+    background-color: beige;
+    width: 20%;
+    text-align: center;
+    border-radius: 15px;
+    /* animation: delay 1s linear; */
+}
+/* @keyframes delay{
+    0%{
+        transform: translateY(-180px);
+        opacity: 0;
+    }
+    100%{
+        transform: translatey(0px);
+        opacity: 1;
+    }
+} */
+button{
+    padding: 3% 8%;
+    margin-top: 5%;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px 1px;
+    border: none;
+    background: linear-gradient(145deg,rgb(247, 73, 183), cyan);
+}
+button:hover{
+    transition: 0.3s all;
+    box-shadow: 0px 0px 15px 2px;
+}
